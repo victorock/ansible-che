@@ -16,7 +16,7 @@ RUN yum install -y epel-release && \
     yum upgrade -y
 
 RUN pip install --upgrade pip setuptools && \
-    pip install --upgrade -r /tmp/requirements.txt
+    pip install -r /tmp/requirements.txt
 
 RUN mkdir -p /home/user && \
     chgrp -R 0 /home/user && \

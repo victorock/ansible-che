@@ -13,7 +13,9 @@ netaddr
 # ipaddr filters
 ipaddress
 # oVirt/RHV
-ovirt-engine-sdk-python>=4.2.4    # minimum set inside Ansible facts module requirements
+ovirt-engine-sdk-python
+#
+cryptography
 # AWX usage
 ansible-tower-cli
 pexpect
@@ -25,7 +27,7 @@ pip
 psphere
 pyvmomi
 # WinRM
-backports.ssl-match-hostname>=3.5.0.1
+backports.ssl-match-hostname
 pywinrm[kerberos]
 requests
 requests-credssp
