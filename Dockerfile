@@ -19,6 +19,10 @@ RUN yum install -y epel-release && \
       openssl-devel \
       curl \
       libcurl-devel \
+      libxml \
+      libxml-devel \
+      libxml2 \
+      libxml2-devel \
       ansible && \ 
     yum upgrade -y
 
