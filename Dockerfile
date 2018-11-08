@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:latest
 MAINTAINER Victor da Costa - https://github.com/victorock/
 
 ADD files/ansible.repo /etc/yum.repos.d
