@@ -1,6 +1,7 @@
 FROM centos:latest
 MAINTAINER Victor da Costa - https://github.com/victorock/
 
+ENV PYCURL_SSL_LIBRARY openssl
 ADD files/ansible.repo /etc/yum.repos.d
 ADD files/requirements.txt /tmp
 
