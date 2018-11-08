@@ -4,17 +4,19 @@ MAINTAINER Victor da Costa - https://github.com/victorock/
 ADD files/ansible.repo /etc/yum.repos.d
 ADD files/requirements.txt /tmp
 
-RUN yum install -y epel-release
-RUN yum install -y bzip2 \
-    gcc-c++ \
-    gettext \
-    git \
-    make \
-    python \
-    python-pip \
-    ansible
+RUN yum install -y epel-release && \
+    yum install -y bzip2 \
+      gcc-c++ \
+      gettext \
+      git \
+      make \
+      python \
+      python-pip \
+      ansible && \ 
+    yum upgrade -y
 
-RUN pip install -r /tmp/requirements.txt --upgrade
+RUN pip install --upgrade pip setuptools && \
+    pip install --upgrade -r /tmp/requirements.txt
 
 RUN mkdir -p /home/user && \
     chgrp -R 0 /home/user && \

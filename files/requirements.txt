@@ -1,7 +1,3 @@
-# pip
-pip
-# setuptools
-setuptools
 # GCE
 apache-libcloud
 # Google Cloud
