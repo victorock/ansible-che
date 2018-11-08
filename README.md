@@ -1,2 +1,2 @@
-# ansible-che
-Ansible Image for Che Stack
+# container-ansible-network
+Container Image for Ansible Network

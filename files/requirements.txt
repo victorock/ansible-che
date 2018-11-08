@@ -1,0 +1,53 @@
+# GCE
+apache-libcloud
+# Google Cloud
+google-cloud
+# Azure
+packaging
+azure
+# AWS
+boto
+boto3
+# netaddr filter
+netaddr
+# ipaddr filters
+ipaddress
+# oVirt/RHV
+ovirt-engine-sdk-python>=4.2.4    # minimum set inside Ansible facts module requirements
+# AWX usage
+ansible-tower-cli
+pexpect
+python-memcached
+psutil
+setuptools
+pip
+# VMware
+psphere
+pyvmomi
+# WinRM
+backports.ssl-match-hostname>=3.5.0.1
+pywinrm[kerberos]
+requests
+requests-credssp
+# OpenStack
+shade
+# Ansible Lint
+ansible-lint
+# Ansible Review
+ansible-review
+# Molecule
+molecule
+# Yaml Lint
+yamllint
+# Network Netconf Client
+ncclient
+# F5
+f5-sdk
+f5-icontrol-rest
+# Passlib
+passlib
+# PaloAlto
+pandevice
+pan-python
+# AVI
+avisdk
