@@ -13,6 +13,7 @@ RUN yum install -y epel-release && \
       git \
       make \
       python \
+      python-devel \
       python-pip \
       openssl \
       openssl-devel \
