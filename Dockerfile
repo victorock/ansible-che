@@ -12,6 +12,7 @@ RUN yum install -y epel-release && \
       make \
       python \
       python-pip \
+      curl \
       ansible && \ 
     yum upgrade -y
 
