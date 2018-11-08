@@ -14,8 +14,6 @@ netaddr
 ipaddress
 # oVirt/RHV
 ovirt-engine-sdk-python
-#
-cryptography
 # AWX usage
 ansible-tower-cli
 pexpect
@@ -31,8 +29,6 @@ backports.ssl-match-hostname
 pywinrm[kerberos]
 requests
 requests-credssp
-# OpenStack
-shade
 # Ansible Lint
 ansible-lint
 # Ansible Review
