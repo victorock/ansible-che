@@ -12,6 +12,8 @@ RUN yum install -y epel-release && \
       make \
       python \
       python-pip \
+      openssl \
+      openssl-devel \
       curl \
       libcurl-devel \
       ansible && \ 
