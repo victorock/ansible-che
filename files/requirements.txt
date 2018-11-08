@@ -34,7 +34,7 @@ ansible-lint
 # Ansible Review
 ansible-review
 # Molecule
-molecule
+#molecule
 # Yaml Lint
 yamllint
 # Network Netconf Client

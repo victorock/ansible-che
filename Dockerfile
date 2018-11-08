@@ -7,6 +7,7 @@ ADD files/requirements.txt /tmp
 
 RUN yum install -y epel-release && \
     yum install -y bzip2 \
+      gcc \
       gcc-c++ \
       gettext \
       git \
