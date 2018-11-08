@@ -14,7 +14,7 @@ RUN yum install -y bzip2 \
     python-pip \
     ansible
 
-RUN pip install -r /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt --upgrade
 
 RUN mkdir -p /home/user && \
     chgrp -R 0 /home/user && \
