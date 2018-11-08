@@ -13,6 +13,7 @@ RUN yum install -y epel-release && \
       python \
       python-pip \
       curl \
+      libcurl-devel \
       ansible && \ 
     yum upgrade -y
 
