@@ -16,6 +16,7 @@ RUN yum install -y epel-release && \
       openssl-devel \
       curl \
       libcurl-devel \
+      python-pycurl \
       ansible && \ 
     yum upgrade -y
 
