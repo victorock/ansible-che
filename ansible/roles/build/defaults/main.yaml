@@ -12,6 +12,5 @@ required_packages:
   - openssl-devel
   - curl
   - libcurl-devel
-  - libxml-devel
   - libxml2
   - libxml2-devel
