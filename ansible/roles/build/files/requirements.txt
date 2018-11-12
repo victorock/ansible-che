@@ -3,40 +3,29 @@ apache-libcloud
 # Google Cloud
 google-cloud
 # Azure
-packaging
 azure
 # AWS
 boto
 boto3
+# oVirt/RHV
+ovirt-engine-sdk-python
+# VMware
+psphere
+pyvmomi
 # netaddr filter
 netaddr
 # ipaddr filters
 ipaddress
-# oVirt/RHV
-ovirt-engine-sdk-python
 # AWX usage
 ansible-tower-cli
 pexpect
 python-memcached
 psutil
 setuptools
-pip
-# VMware
-psphere
-pyvmomi
-# WinRM
-backports.ssl-match-hostname
-pywinrm[kerberos]
-requests
-requests-credssp
-# Ansible Lint
-ansible-lint
-# Ansible Review
-ansible-review
 # Molecule
-#molecule
-# Yaml Lint
-yamllint
+molecule
+# XML
+xmltodict
 # Network Netconf Client
 ncclient
 # F5

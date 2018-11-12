@@ -1,0 +1,22 @@
+---
+- name: "Ensure packages"
+  yum:
+    name: "{{ required_packages }}"
+    state: "present"
+
+- name: "Ensure pip dependencies"
+  environment:
+    PYCURL_SSL_LIBRARY: openssl
+  pip:
+    requirements: "{{ roles_path }}/files/requirements.txt"
+    state: "latest"
+
+- name: "Esure ansible user"
+  user:
+    uid: 1001
+    group: 0
+    name: ansible
+    home: /home/ansible
+    create_home: yes
+    shell: /bin/bash
+    state: present

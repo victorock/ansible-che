@@ -1,0 +1,18 @@
+required_packages:
+  - bzip2
+  - gcc 
+  - gcc-c++ 
+  - gettext 
+  - git
+  - make 
+  - python 
+  - python-devel 
+  - python-pip 
+  - openssl 
+  - openssl-devel 
+  - curl 
+  - libcurl-devel 
+  - libxml 
+  - libxml-devel 
+  - libxml2 
+  - libxml2-devel 
