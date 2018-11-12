@@ -9,7 +9,12 @@
     name: "{{ required_packages }}"
     state: "latest"
 
-- name: "Ensure pip dependencies"
+- name: "Ensure pip"
+  pip:
+    name: "pip"
+    state: "latest"
+
+- name: "Ensure requirements"
   environment:
     PYCURL_SSL_LIBRARY: openssl
   pip:
