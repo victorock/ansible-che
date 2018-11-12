@@ -9,4 +9,5 @@ RUN yum install -y ansible
 RUN ansible-playbook main.yaml
 
 USER ansible
+WORKDIR /projects
 CMD tail -f /dev/null
