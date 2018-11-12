@@ -7,7 +7,7 @@
 - name: "Ensure packages"
   yum:
     name: "{{ required_packages }}"
-    state: "present"
+    state: "latest"
 
 - name: "Ensure pip dependencies"
   environment:
