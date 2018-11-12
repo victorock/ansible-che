@@ -26,10 +26,13 @@ required_pips:
   - pyvmomi
   - netaddr
   - ipaddress
+  - 'psutil==5.4.6'
+  - 'PyYAML==3.13'
+  - 'six==1.11.0'
+  - 'cryptography>=2.1.4'
   - ansible-tower-cli
   - pexpect
   - python-memcached
-  - psutil
   - molecule
   - xmltodict
   - ncclient
