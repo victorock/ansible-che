@@ -13,7 +13,7 @@
   environment:
     PYCURL_SSL_LIBRARY: openssl
   pip:
-    requirements: "{{ roles_path }}/files/requirements.txt"
+    requirements: "{{ role_path }}/files/requirements.txt"
     state: "latest"
 
 - name: "Esure ansible user"
