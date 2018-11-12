@@ -1,0 +1,46 @@
+required_packages:
+  - bzip2
+  - gcc
+  - gcc-c++
+  - gettext
+  - git
+  - make
+  - python
+  - python-devel
+  - python-pip
+  - openssl
+  - openssl-devel
+  - curl
+  - libcurl-devel
+  - libxml2
+  - libxml2-devel
+
+required_pips:
+  - apache-libcloud
+  - google-cloud
+  - azure
+  - boto
+  - boto3
+  - ovirt-engine-sdk-python
+  - psphere
+  - pyvmomi
+  - netaddr
+  - 'psutil==5.4.6'
+  - 'six==1.11.0'
+  - 'cryptography>=2.1.4'
+  - 'click==6.7'
+  - 'colorama==0.3.9'
+  - requests
+  - idna
+  - ansible-tower-cli
+  - pexpect
+  - python-memcached
+  - molecule
+  - xmltodict
+  - ncclient
+  - f5-sdk
+  - f5-icontrol-rest
+  - passlib
+  - pandevice
+  - pan-python
+  - avisdk

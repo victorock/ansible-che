@@ -1,0 +1,6 @@
+- name: "image builder"
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  roles:
+    - build
