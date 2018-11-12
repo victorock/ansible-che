@@ -25,7 +25,6 @@ required_pips:
   - psphere
   - pyvmomi
   - netaddr
-  - ipaddress
   - 'psutil==5.4.6'
   - 'PyYAML==3.13'
   - 'six==1.11.0'
