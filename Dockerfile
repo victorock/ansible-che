@@ -5,7 +5,7 @@ ADD files/ansible.repo /etc/yum.repos.d
 COPY ansible /ansible/
 WORKDIR /ansible
 
-RUN yum install -y epel-release ansible
+RUN yum install -y ansible
 RUN ansible-playbook main.yaml
 
 USER ansible
