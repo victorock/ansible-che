@@ -11,14 +11,16 @@
 
 - name: "Ensure pip"
   pip:
-    name: "pip"
+    name:
+        - "pip"
+        - "setuptools"
     state: "latest"
 
 - name: "Ensure requirements"
   environment:
     PYCURL_SSL_LIBRARY: openssl
   pip:
-    requirements: "{{ role_path }}/files/requirements.txt"
+    name: "{{ required_pips }}"
     state: "latest"
 
 - name: "Esure ansible user"
