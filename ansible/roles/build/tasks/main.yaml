@@ -32,3 +32,9 @@
     create_home: yes
     shell: /bin/bash
     state: present
+
+- name: "Copy entrypoint"
+  copy:
+    src: "files/entrypoint"
+    dest: "/entrypoint"
+    mode: u=rwx,g=rx,o=rx
