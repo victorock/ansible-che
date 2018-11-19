@@ -23,18 +23,20 @@
     name: "{{ required_pips }}"
     state: "latest"
 
-- name: "Esure ansible user"
-  user:
-    uid: 1001
-    group: 0
-    name: ansible
-    home: /home/ansible
-    create_home: yes
-    shell: /bin/bash
-    state: present
-
 - name: "Copy entrypoint"
   copy:
     src: "files/entrypoint"
     dest: "/entrypoint"
     mode: u=rwx,g=rx,o=rx
+
+- name: "Ensure home directory with root permissions"
+  file:
+    name: "/home/ansible"
+    state: directory
+    group: root
+    mode: g=u
+
+- name: "Set group bits equal to user bits for /etc/passwd"
+  file:
+    name: /etc/passwd
+    mode: g=u
