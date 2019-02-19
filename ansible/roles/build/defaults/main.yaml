@@ -44,3 +44,5 @@ required_pips:
   - pandevice
   - pan-python
   - avisdk
+  - ansible-review
+  - ansible-lint
