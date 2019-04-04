@@ -1,5 +1,4 @@
-FROM centos:latest
-MAINTAINER Victor da Costa - https://github.com/victorock/
+FROM centos/systemd:latest
 
 ADD files/ansible.repo /etc/yum.repos.d
 COPY ansible /ansible/
