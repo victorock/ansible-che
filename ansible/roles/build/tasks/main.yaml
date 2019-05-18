@@ -9,19 +9,29 @@
     name: "{{ required_packages }}"
     state: "latest"
 
-- name: "Ensure pip"
+- name: "Ensure pip tools"
   pip:
     name:
         - "pip"
         - "setuptools"
+        - "pip-tools"
     state: "latest"
 
+- name: "Pip compile requirements.in"
+  environment:
+    PYCURL_SSL_LIBRARY: openssl
+  command: "pip-compile --output-file requirements.txt requirements.in "
+  args:
+    chdir: "{{ role_path }}/files"
+    creates: "requirements.txt"
+  
 - name: "Ensure requirements"
   environment:
     PYCURL_SSL_LIBRARY: openssl
   pip:
-    name: "{{ required_pips }}"
-    state: "latest"
+    requirements: "requirements.txt"
+    chdir: "{{ role_path }}/files"
+    state: "present"
 
 - name: "Copy entrypoint"
   copy:
